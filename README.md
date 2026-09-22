@@ -1,13 +1,14 @@
-# 요척 누락 방지 프로그램 - GitHub EXE 빌드
+# 요척 누락 방지 프로그램 - 개선 버전
 
-이 패키지는 사용자 PC에 Python을 설치하지 않고 GitHub Actions의 Windows 서버에서 EXE를 만드는 방식입니다.
+개선 내용:
+- 글자와 입력칸 크기 확대
+- 패턴 개수는 별도 창 없이 표 안에서 바로 입력
+- 비고도 표 안에서 바로 수정
+- 패턴 확인 / 요척 입력 확인은 표에서 클릭으로 바로 체크
+- 상의 / 하의 탭으로 구분하여 해당 항목만 표시
+- 항목별 패턴 개수 합계를 화면 하단에 항상 표시
+- 패턴 개수를 수정하면 합계가 즉시 업데이트
+- GitHub Actions로 Windows EXE 자동 생성
 
-1. GitHub에 새 Repository를 만듭니다.
-2. 이 ZIP의 압축을 풉니다.
-3. `요척_누락방지_프로그램.py`와 `.github/workflows/build.yml`을 Repository에 업로드합니다.
-4. GitHub의 Actions 탭에서 `Build Windows EXE`를 선택합니다.
-5. `Run workflow`를 누릅니다.
-6. 빌드가 완료되면 해당 실행 화면의 Artifacts에서 `요척_누락방지_프로그램-Windows`를 다운로드합니다.
-7. 압축을 풀고 `요척_누락방지_프로그램.exe`를 실행합니다.
-
-완성된 EXE를 실행할 때는 Python이 필요 없습니다.
+GitHub에 `요척_누락방지_프로그램.py`와 `.github/workflows/build.yml`을 올린 뒤
+Actions → Build Windows EXE → Run workflow를 실행하면 됩니다.
